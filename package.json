@@ -1,0 +1,15 @@
+{
+  "name": "markdown-note-app",
+  "version": "1.0.0",
+  "description": "markdown-notes-app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}

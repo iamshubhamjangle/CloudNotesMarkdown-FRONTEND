@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
+
+.heading {
+  font-size: 40px;
+  font-family: "Work Sans", sans-serif;
+  padding: 20px 10px;
+}
