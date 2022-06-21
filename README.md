@@ -1,16 +1,53 @@
-# Notepad-with-markdown
+# Markdown CloudNotes
 
-Cloudnary - to upload pictures
+This is a full stack Single Page Application created using
 
-# React
+- `React v18`
+- `Node.js v16`
+- `Express.js v4.18`
+- `MongoDB`
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with this project
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project root directory, you can run:
+
+`npm start` - to run bacnkend server
+
+`npm run server` - to run backend in nodemon environment, which will autorestart the server in case of any changes in files.
+
+`npm run client` - to compile and run React SPA.
+
+```
+"start": "node backend/server",
+"server": "nodemon backend/server",
+"client": "npm start --prefix frontend",
+```
+
+### Please set a .env file in root folder for execution of above commands successfully.
+
+`.env`
+
+```
+PORT = 5000
+MONGO_URI=<mongoURI>
+NODE_ENV=<production/dev>
+JWT_SECRET=<write_any_secret>
+```
+
+example
+
+```
+PORT = 5000
+MONGO_URI=mongodb+srv://root:testtesttesttest@cluster0.ghliv.mongodb.net/?retryWrites=true&w=majority
+NODE_ENV=production
+JWT_SECRET=helloworld
+```
+
+# React
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `npm start`
 
@@ -75,6 +112,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+# Notes
+
 ```js
 // 1. Using function keyword
 function App() {
@@ -106,13 +145,3 @@ const App = () => (
 
 export default App;
 ```
-
-# Node.js
-
-npm init
-npm i express // to setup api management in node
-npm i dotenv // to access .env file
-npm i nodemon // to autorestart server on save. Also update the same in package.json
-
-// to read the env files
-npm i dotenv
