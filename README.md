@@ -45,6 +45,37 @@ NODE_ENV=production
 JWT_SECRET=helloworld
 ```
 
+# Deploying to heroku
+
+Deploy using Heroku Git
+Use git in the command line or a GUI tool to deploy this app.
+Install the Heroku CLI
+Download and install the Heroku CLI.
+
+If you haven't already, log in to your Heroku account and follow the prompts to create a new SSH public key.
+
+```
+$ heroku login
+```
+
+Clone the repository
+Use Git to clone cloudmarkdownnotes's source code to your local machine.
+Here `cloudmarkdownnotes` is the project name on heroku.
+
+```
+$ heroku git:clone -a cloudmarkdownnotes
+$ cd cloudmarkdownnotes
+```
+
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+```
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
+
 # React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
