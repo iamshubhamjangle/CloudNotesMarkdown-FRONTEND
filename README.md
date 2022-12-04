@@ -1,5 +1,7 @@
 # Markdown CloudNotes
 
+Deployed: https://cloudmarkdownnotes.herokuapp.com/ (Heroku has changed it free plan to paid, App not working anymore :-()
+
 This is a full stack Single Page Application created using
 
 - `React v18`
