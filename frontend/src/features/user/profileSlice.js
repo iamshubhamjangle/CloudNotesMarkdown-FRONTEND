@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const backend_api = process.env.REACT_APP_BACKEND_API;
-const updateProfileUrl = backend_api + "api/users/profile";
+const updateProfileUrl = backend_api + "/api/users/profile";
 
 export const updateProfile = createAsyncThunk(
   "user/profile",
