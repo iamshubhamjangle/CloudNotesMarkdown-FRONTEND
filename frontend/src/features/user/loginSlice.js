@@ -2,7 +2,8 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { setUserInfo } from "./userSlice";
 
-const loginUrl = "/api/users/login";
+const backend_api = process.env.REACT_APP_BACKEND_API;
+const loginUrl = backend_api + "/api/users/login";
 
 const initialState = {
   isLoading: false,
