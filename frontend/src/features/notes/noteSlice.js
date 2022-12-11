@@ -20,6 +20,7 @@ const initialState = {
 const backend_api = process.env.REACT_APP_BACKEND_API;
 const fetchAllNotesUrl = backend_api + "/api/notes";
 const createNewNoteUrl = backend_api + "/api/notes/create";
+const modifyNoteUrl = backend_api + "/api/notes";
 
 /**
  * @param token token string
@@ -92,7 +93,7 @@ export const updateNote = createAsyncThunk(
   "note/update",
   async ({ token, requestBody }, thunkAPI) => {
     const { noteId, title, content, category } = requestBody;
-    const updateNoteUrl = `/api/notes/${noteId}`;
+    const updateNoteUrl = modifyNoteUrl + `/${noteId}`;
 
     try {
       const config = {
@@ -128,7 +129,7 @@ export const updateNote = createAsyncThunk(
 export const deleteNote = createAsyncThunk(
   "note/delete",
   async ({ token, id: noteId }, thunkAPI) => {
-    const deleteNoteUrl = `/api/notes/${noteId}`;
+    const deleteNoteUrl = modifyNoteUrl + `/${noteId}`;
 
     try {
       const config = {
