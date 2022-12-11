@@ -144,37 +144,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# Notes
-
-```js
-// 1. Using function keyword
-function App() {
-  return (
-    <>
-      <h1>Hello World</h1>
-      <h1>Hello World 2</h1>
-    </>
-  );
-}
-
-// 2. Using arrow fn (use return as we have used curly braces)
-const App = () => {
-  return (
-    <>
-      <h1>Hello World</h1>
-      <h1>Hello World 2</h1>
-    </>
-  );
-};
-
-// 3. Using arrow fn
-const App = () => (
-  <>
-    <h1>Hello World</h1>
-    <h1>Hello World 2</h1>
-  </>
-);
-
-export default App;
-```
