@@ -7,7 +7,8 @@ const initialState = {
   isLoading: false,
 };
 
-const registrationUrl = "/api/users/register";
+const backend_api = process.env.REACT_APP_BACKEND_API;
+const registrationUrl = backend_api + "/api/users/register";
 
 /**
  * @param requestBody

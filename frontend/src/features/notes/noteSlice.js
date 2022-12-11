@@ -17,8 +17,9 @@ const initialState = {
   notes: [],
 };
 
-const fetchAllNotesUrl = "/api/notes";
-const createNewNoteUrl = "api/notes/create";
+const backend_api = process.env.REACT_APP_BACKEND_API;
+const fetchAllNotesUrl = backend_api + "/api/notes";
+const createNewNoteUrl = backend_api + "/api/notes/create";
 
 /**
  * @param token token string
