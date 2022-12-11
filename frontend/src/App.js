@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/profile" element={<UserProfileScreen />} />
           <Route path="/create-note" element={<CreateNoteScreen />} />
           <Route path="/update-note/:id" element={<UpdateNoteScreen />} />
+          <Route path="*" element={<HomeScreen />} />
         </Routes>
       </div>
       <Footer />
