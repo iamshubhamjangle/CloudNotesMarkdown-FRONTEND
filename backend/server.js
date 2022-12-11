@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db.js");
+const cors = require("cors");
 const userRoutes = require("./routes/userRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
